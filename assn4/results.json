@@ -1,0 +1,84 @@
+{
+  "dataset": "Breast Cancer Wisconsin (Diagnostic)",
+  "n_samples": 569,
+  "n_features": 30,
+  "n_train": 455,
+  "n_test": 114,
+  "class_counts_malignant_benign": [
+    212,
+    357
+  ],
+  "positive_class": "benign",
+  "results": {
+    "SVM": {
+      "accuracy": 0.9824561403508771,
+      "precision": 0.9861111111111112,
+      "recall": 0.9861111111111112,
+      "f1": 0.9861111111111112,
+      "log_loss": 0.08600880698191904
+    },
+    "Decision Tree": {
+      "accuracy": 0.9210526315789473,
+      "precision": 0.9565217391304348,
+      "recall": 0.9166666666666666,
+      "f1": 0.9361702127659575,
+      "log_loss": 1.8915991355905808
+    },
+    "KNN": {
+      "accuracy": 0.956140350877193,
+      "precision": 0.958904109589041,
+      "recall": 0.9722222222222222,
+      "f1": 0.9655172413793104,
+      "log_loss": 0.3941003941560138
+    },
+    "Naive Bayes": {
+      "accuracy": 0.9385964912280702,
+      "precision": 0.9452054794520548,
+      "recall": 0.9583333333333334,
+      "f1": 0.9517241379310345,
+      "log_loss": 0.3712555467025124
+    }
+  },
+  "confusion_matrices_rows_actual_cols_predicted_labels_malignant_benign": {
+    "SVM": [
+      [
+        41,
+        1
+      ],
+      [
+        1,
+        71
+      ]
+    ],
+    "Decision Tree": [
+      [
+        39,
+        3
+      ],
+      [
+        6,
+        66
+      ]
+    ],
+    "KNN": [
+      [
+        39,
+        3
+      ],
+      [
+        2,
+        70
+      ]
+    ],
+    "Naive Bayes": [
+      [
+        38,
+        4
+      ],
+      [
+        3,
+        69
+      ]
+    ]
+  }
+}
